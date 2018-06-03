@@ -1,6 +1,8 @@
 import React from 'react'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
 
+import Login from './Login'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -9,6 +11,7 @@ class App extends React.Component {
     return(
       <div>
         <h1>Welcome to the authenticator</h1>
+        <Login />
       </div>
     )
   }
