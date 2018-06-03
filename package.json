@@ -23,5 +23,9 @@
   "repository": "https://github.com/guy-stapleton/auth-practice.git",
   "author": "Guy Stapleton <guy.stapleton+1@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@webpack-cli/init": "^0.0.8",
+    "webpack-cli": "^3.0.1"
+  }
 }
