@@ -3,6 +3,7 @@
     "start": "node server"
   },
   "dependencies": {
+    "babel": "^6.23.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "react": "^16.4.0",
