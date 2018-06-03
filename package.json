@@ -4,7 +4,8 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "react": "^16.4.0"
   },
   "name": "auth-practice",
   "version": "0.0.1",
