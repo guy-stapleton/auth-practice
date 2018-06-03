@@ -1,11 +1,4 @@
 {
-  "scripts": {
-    "start": "node server"
-  },
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3"
-  },
   "name": "auth-practice",
   "version": "0.0.1",
   "description": "A project to practice setting up authentication fromscratch",
@@ -13,5 +6,35 @@
   "repository": "https://github.com/guy-stapleton/auth-practice.git",
   "author": "Guy Stapleton <guy.stapleton+1@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "start": "node server/index & webpack --watch",
+    "dev": "nodemon server/index & webpack --watch"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "path": "^0.12.7",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.2.2",
+    "webpack": "^4.10.2"
+  },
+  "devDependencies": {
+    "@webpack-cli/init": "^0.0.8",
+    "webpack-cli": "^3.0.1"
+  }
 }
