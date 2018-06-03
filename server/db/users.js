@@ -1,4 +1,5 @@
 const connection = require('./connection')
+const hash = require('../auth/hash')
 
 module.exports = {
   createUser,
@@ -6,9 +7,10 @@ module.exports = {
 }
 
 function createUser (username, password, conn) {
+  const passwordHash = hash.generate(password)
   const db = conn || connection
   return db('users')
-    .insert({username, hash: password})
+    .insert({username, hash: passwordHash})
 }
 
 function userExists(username, conn) {
